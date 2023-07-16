@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Football Betting</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <div class="card">
+        <h1>Gerador de Bolão</h1>
+        <form novalidate>
+            <div class="form-row">
+                <label for="teama">
+                    <p>Primeiro time<span>*</span></p>
+                    <input type="text" name="teama" id="teama" placeholder="Nome do primeiro time">
+                    <small><i class="fa-solid fa-circle-exclamation"></i> É preciso informar o nome do primeiro time</small>
+                </label>
+                <label for="teamb">
+                    <p>Segundo time<span>*</span></p>
+                    <input type="text" name="teamb" id="teamb" placeholder="Nome do segundo time">
+                    <small><i class="fa-solid fa-circle-exclamation"></i> É preciso informar o nome do segundo time</small>
+                </label>
+            </div>
+            <label for="championship">
+                <p>Nome do campeonato<span>*</span></p>
+                <input type="text" name="championship" id="championship" placeholder="Nome do campeonato">
+                <small><i class="fa-solid fa-circle-exclamation"></i> Informe o nome do campeonato</small>
+            </label>
+            <div class="form-row">
+                <label for="date">
+                    <p>Dia da partida<span>*</span></p>
+                    <input type="date" name="date" id="date">
+                    <small><i class="fa-solid fa-circle-exclamation"></i> É preciso informar a data do jogo</small>
+                </label>
+                <label for="time">
+                    <p>Hora da partida<span>*</span></p>
+                    <input type="time" name="time" id="time">
+                    <small><i class="fa-solid fa-circle-exclamation"></i> É preciso informar a hora da partida</small>
+                </label>
+            </div>
+            <label for="amount">
+                <p>Valor da cota (R$)<span>*</span></p>
+                <input type="text" name="amount" id="amount" value="10,00">
+                <small><i class="fa-solid fa-circle-exclamation"></i> Defina o valor da aposta</small>
+            </label>
+            <div class="controls">
+                <button type="reset" onclick="formReset()"><i class="fa-solid fa-xmark"></i> Cancelar</button>
+                <button class="primary" type="submit"><i class="fa-solid fa-check"></i> Gerar formulário de adesão</button>
+            </div>
+        </form>
+        <footer>Made with ❤️ for my 22k.</footer>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
